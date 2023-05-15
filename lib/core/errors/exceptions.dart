@@ -11,6 +11,12 @@ class ApiExceptions implements Exception {
 class GeneralException implements Exception {
   final String message;
   GeneralException({
-     this.message = 'Ocorreu um erro. Tente novamente.',
+    this.message = 'Ocorreu um erro. Tente novamente.',
   });
+}
+
+class AudioPlayerExceptions implements Exception {
+  final String message;
+
+  AudioPlayerExceptions({required this.message});
 }
